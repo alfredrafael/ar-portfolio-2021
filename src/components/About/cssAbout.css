@@ -1,0 +1,360 @@
+.about-info-area {
+  padding: 2rem 0 0 0;
+}
+
+.about-info-area .curve {
+  /*circlepicture*/
+  width: 20%;
+  height: auto;
+  width: 12% !important;
+  float: left;
+  margin-right: 2rem;
+  border-radius: 50%;
+  -webkit-shape-outside: circle();
+  shape-outside: circle();
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.about-info-area p {
+  font-size: 115%;
+  margin-bottom: 5%;
+  line-height: 165%;
+}
+
+.about-info-area h2 {
+  margin: 0 0 1em 0;
+}
+
+.about-info-area span {
+  color: #040182;
+  text-shadow: 0.5px 1px azure;
+  opacity: 0.7;
+}
+
+p .about-bolding {
+  font-weight: bolder !important;
+}
+
+/*---LAPTOPS AND ABOVE---*/
+
+/*-- specific for this project's <h1>--*/
+
+@media screen and (max-width: 1122px) and (-webkit-min-device-pixel-ratio: 1) {
+  .about-info-area {
+  }
+
+  .about-info-area p {
+  }
+
+  .about-info-area h2 {
+  }
+
+  .about-info-area span {
+  }
+}
+
+@media screen and (max-width: 1072px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+@media screen and (max-width: 992px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+@media screen and (max-width: 870px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+@media screen and (max-width: 770px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+@media screen and (max-width: 657px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/*iPhone 5*/
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .about-info-area {
+    margin: 2% 0;
+  }
+
+  .about-info-area .curve {
+    margin-right: 1%;
+    margin-bottom: 1%;
+    width: 40% !important;
+  }
+  .about-info-area p {
+    text-align: right;
+    font-size: 110%;
+  }
+  .about-info-area h2 {
+    font-weight: lighter;
+    text-align: center;
+  }
+}
+
+/*Galaxy 5s*/
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+  .about-info-area {
+    margin: 2% 0;
+  }
+
+  .about-info-area .curve {
+    margin-right: 1%;
+    margin-bottom: 1%;
+    width: 40% !important;
+  }
+
+  .about-info-area p {
+    text-align: right;
+    font-size: 110%;
+  }
+  .about-info-area h2 {
+    font-weight: lighter;
+    text-align: center;
+  }
+}
+
+/*Samsung Galaxy Note 3 Media Queries (In terms of Mobile only)*/
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+  .about-info-area {
+    margin: 2% 0;
+  }
+
+  .about-info-area .curve {
+    margin-right: 1%;
+    margin-bottom: 1%;
+    width: 40% !important;
+  }
+
+  .about-info-area p {
+    text-align: right;
+    font-size: 110%;
+  }
+  .about-info-area h2 {
+    font-weight: lighter;
+    text-align: center;
+  }
+}
+
+/* Galaxy Note 9 */
+
+@media only screen and (min-width: 360px) and (max-width: 740px) {
+  .about-info-area {
+    margin: 2% 0;
+  }
+
+  .about-info-area .curve {
+    margin-right: 1%;
+    margin-bottom: 1%;
+    width: 40% !important;
+  }
+
+  .about-info-area p {
+    text-align: right;
+    font-size: 110%;
+  }
+  .about-info-area h2 {
+    font-weight: lighter;
+  }
+}
+
+/*iPhone XR*/
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+  .devicon-html5-plain,
+  .html-div {
+    display: none;
+  }
+
+  .dev-icons {
+    font-size: 200%;
+    margin-left: 25%;
+  }
+
+  .about-info-area {
+    margin: 2% 0;
+  }
+
+  .about-info-area .curve {
+    margin-right: 1%;
+    margin-bottom: 1%;
+    width: 40% !important;
+  }
+
+  .about-info-area p {
+    text-align: right;
+    font-size: 110%;
+  }
+  .about-info-area h2 {
+    font-weight: lighter;
+  }
+}
+
+/*iPhone 6/7/8*/
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .devicon-html5-plain,
+  .html-div {
+    display: none;
+  }
+
+  .dev-icons {
+    font-size: 200%;
+    margin-left: 20%;
+  }
+
+  .about-info-area {
+    margin: 2% 0;
+  }
+
+  .about-info-area .curve {
+    margin-right: 1%;
+    margin-bottom: 1%;
+    width: 40% !important;
+  }
+
+  .about-info-area p {
+    text-align: right;
+    font-size: 110%;
+  }
+  .about-info-area h2 {
+    font-weight: lighter;
+  }
+}
+
+/*iPhone 6+/7+/8+ */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+  .devicon-html5-plain,
+  .html-div {
+    display: none;
+  }
+
+  .dev-icons {
+    font-size: 200%;
+    margin-left: 20%;
+  }
+}
+
+/*iPhone X*/
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .devicon-html5-plain,
+  .html-div {
+    display: none;
+  }
+
+  .dev-icons {
+    font-size: 200%;
+    margin-left: 20%;
+  }
+
+  .about-info-area {
+    margin: 2% 0;
+  }
+
+  .about-info-area .curve {
+    margin-right: 1%;
+    margin-bottom: 1%;
+    width: 40% !important;
+  }
+
+  .about-info-area p {
+    text-align: right;
+    font-size: 110%;
+  }
+  .about-info-area h2 {
+    font-weight: lighter;
+  }
+}
+
+/*iPhone X & XS*/
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .devicon-html5-plain,
+  .html-div {
+    display: none;
+  }
+
+  .dev-icons {
+    font-size: 200%;
+    margin-left: 20%;
+  }
+
+  .about-info-area {
+    margin: 2% 0;
+  }
+
+  .about-info-area .curve {
+    margin-right: 1%;
+    margin-bottom: 1%;
+    width: 40% !important;
+  }
+
+  .about-info-area p {
+    text-align: right;
+    font-size: 110%;
+  }
+  .about-info-area h2 {
+    font-weight: lighter;
+  }
+}
+
+/* iphone XS Max */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+  .devicon-html5-plain,
+  .html-div {
+    display: none;
+  }
+
+  .dev-icons {
+    font-size: 200%;
+    margin-left: 20%;
+  }
+}
+
+/*Galaxy 5s*/
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+  .devicon-html5-plain,
+  .html-div {
+    display: none;
+  }
+
+  .dev-icons {
+    font-size: 200%;
+    margin-left: 20%;
+  }
+}
+
+/*/////////Other androids///////////*/
+
+/*Samsung Galaxy S9 Media Queries (In terms of Mobile only)*/
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+  .devicon-html5-plain,
+  .html-div {
+    display: none;
+  }
+
+  .dev-icons {
+    font-size: 200%;
+    margin-left: 20%;
+  }
+}
+
+/* My media queries for larger displays */
+
+@media screen and (min-width: 1122px) and (max-width: 1550px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+@media screen and (min-width: 1551px) and (max-width: 2000px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+}
+
+/* ----------- Wide Screens ----------- */
+
+@media only screen and (min-width: 1224px) {
+}
+
+@media only screen and (min-width: 1824px) {
+}
+
+@media (min-width: 2000) {
+}

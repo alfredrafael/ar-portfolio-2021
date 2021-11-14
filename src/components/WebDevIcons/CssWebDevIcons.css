@@ -1,0 +1,318 @@
+.icons-row {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2%;
+  width: 95vw;
+  padding-bottom: 2%;
+  color: #606060;
+  overflow-x: hidden;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.icons-row-container {
+  box-shadow: 0 1em 1em -1em rgba(0, 0, 0, 0.25);
+  text-align: center;
+  background-color: #e2e7f7;
+}
+
+.dev-icons {
+  font-size: 250%;
+}
+
+.tooltip-inner {
+  /* background-color: red ;
+    color:red; */
+  font-weight: bold;
+  font-size: larger;
+}
+
+/* top underneath is opposite to the directions on the file...*/
+/* https://stackoverflow.com/questions/15383440/styling-the-arrow-on-bootstrap-tooltips */
+.bs-tooltip-auto[x-placement^="bottom"] span.arrow::before,
+.bs-tooltip-top .arrow::before {
+  border-bottom-color: #040182;
+}
+/*/////////////////// MEDIA QUERIES START /////////////////////////////////*/
+
+/*---LAPTOPS AND ABOVE---*/
+
+/*-- specific for this project's <h1>--*/
+
+@media screen and (max-width: 1122px) and (-webkit-min-device-pixel-ratio: 1) {
+  .devicon-express-original,
+  .express-div,
+  .icons-row-container .wordpress-div,
+  .icons-row-container .devicon-wordpress-plain {
+    display: none;
+  }
+
+  .dev-icons {
+    font-size: 325%;
+  }
+}
+
+@media screen and (max-width: 1072px) and (-webkit-min-device-pixel-ratio: 1) {
+  .icons-row-container .devicon-git-plain,
+  .icons-row-container .git-div,
+  .icons-row-container .devicon-github-plain,
+  .icons-row-container .git-div,
+  .devicon-html5-plain .html-div {
+    display: none;
+  }
+
+  .dev-icons {
+    margin-left: 50%;
+  }
+}
+
+@media screen and (max-width: 992px) and (-webkit-min-device-pixel-ratio: 1) {
+  .icons-row-container .devicon-bootstrap-plain,
+  .bootstrap-div {
+    display: none;
+  }
+
+  .dev-icons {
+    font-size: 300%;
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 870px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+@media screen and (max-width: 770px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+@media screen and (max-width: 657px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/*iPhone 5*/
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .devicon-html5-plain,
+  .html-div {
+    display: none;
+  }
+
+  .dev-icons {
+    font-size: 200%;
+    margin-left: 20%;
+  }
+
+  /* .icons-row-container {
+        display: none;
+    } */
+}
+
+/*Galaxy 5s*/
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+  .devicon-html5-plain,
+  .html-div {
+    display: none;
+  }
+
+  .dev-icons {
+    font-size: 200%;
+    margin-left: 20%;
+  }
+
+  /* 
+    .icons-row-container {
+        display: none;
+    } */
+}
+
+/*Samsung Galaxy Note 3 Media Queries (In terms of Mobile only)*/
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+  .devicon-html5-plain,
+  .html-div {
+    display: none;
+  }
+
+  .dev-icons {
+    font-size: 200%;
+    margin-left: 20%;
+  }
+
+  /* 
+
+    .icons-row-container {
+        display: none;
+    } */
+}
+
+/* Galaxy Note 9 */
+
+@media only screen and (min-width: 360px) and (max-width: 740px) {
+  .devicon-html5-plain,
+  .html-div {
+    display: none;
+  }
+
+  .dev-icons {
+    font-size: 200%;
+    margin-left: 20%;
+  }
+
+  /* 
+    .icons-row-container {
+        display: none;
+    } */
+}
+
+/*iPhone XR*/
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+  .devicon-html5-plain,
+  .html-div {
+    display: none;
+  }
+
+  .dev-icons {
+    font-size: 200%;
+    margin-left: 25%;
+  }
+}
+
+/*iPhone 6/7/8*/
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .devicon-html5-plain,
+  .html-div {
+    display: none;
+  }
+
+  .dev-icons {
+    font-size: 200%;
+    margin-left: 20%;
+  }
+
+  /* .icons-row-container {
+        display: none;
+    } */
+}
+
+/*iPhone 6+/7+/8+ */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+  .devicon-html5-plain,
+  .html-div {
+    display: none;
+  }
+
+  .dev-icons {
+    font-size: 200%;
+    margin-left: 20%;
+  }
+
+  /* 
+    .icons-row-container {
+        display: none;
+    } */
+}
+
+/*iPhone X*/
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .devicon-html5-plain,
+  .html-div {
+    display: none;
+  }
+
+  .dev-icons {
+    font-size: 200%;
+    margin-left: 20%;
+  }
+
+  /* .icons-row-container {
+        display: none;
+    } */
+}
+
+/*iPhone X & XS*/
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .devicon-html5-plain,
+  .html-div {
+    display: none;
+  }
+
+  .dev-icons {
+    font-size: 200%;
+    margin-left: 20%;
+  }
+}
+
+/* iphone XS Max */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+  .devicon-html5-plain,
+  .html-div {
+    display: none;
+  }
+
+  .dev-icons {
+    font-size: 200%;
+    margin-left: 20%;
+  }
+
+  /* 
+    .icons-row-container {
+        display: none;
+    } */
+}
+
+/*Galaxy 5s*/
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+  .devicon-html5-plain,
+  .html-div {
+    display: none;
+  }
+
+  .dev-icons {
+    font-size: 200%;
+    margin-left: 20%;
+  }
+
+  /* 
+    .icons-row-container {
+        display: none;
+    } */
+}
+
+/*/////////Other androids///////////*/
+
+/*Samsung Galaxy S9 Media Queries (In terms of Mobile only)*/
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+  .devicon-html5-plain,
+  .html-div {
+    display: none;
+  }
+
+  .dev-icons {
+    font-size: 200%;
+    margin-left: 20%;
+  }
+
+  /* 
+    .icons-row-container {
+        display: none;
+    } */
+}
+
+/* My media queries for larger displays */
+
+@media screen and (min-width: 1122px) and (max-width: 1550px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+@media screen and (min-width: 1551px) and (max-width: 2000px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+}
+
+/* ----------- Wide Screens ----------- */
+
+@media only screen and (min-width: 1224px) {
+}
+
+@media only screen and (min-width: 1824px) {
+}
+
+@media (min-width: 2000) {
+}

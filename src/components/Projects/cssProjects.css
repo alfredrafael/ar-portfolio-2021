@@ -1,0 +1,124 @@
+#projectsComponent {
+  background: linear-gradient(white, #040182);
+}
+
+#projects h2 {
+  margin: 1em 0;
+}
+
+#projects span {
+  color: #040182;
+  text-shadow: 0.5px 1px azure;
+  opacity: 0.7;
+}
+
+#projects .project-rows {
+  justify-content: space-around;
+  margin-bottom: 3%;
+}
+
+#projects .card.highlight-on-hover {
+  border: 0.5px solid grey;
+  padding: 2%;
+  background-color: #e2e7f7;
+}
+
+#projects .highlight-on-hover {
+  transition: transform 0.2s;
+  position: relative;
+  -webkit-transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  -ms-transition: transform 0.2s;
+  -o-transition: transform 0.2s;
+}
+
+#projects .highlight-on-hover:hover {
+  box-shadow: 0 15px 55px 5px rgba(0, 0, 0, 0.15);
+  transform: translateY(-7px);
+  text-decoration: none;
+  transition: transform 0.5s;
+  -webkit-transform: translateY(-7px);
+  -moz-transform: translateY(-7px);
+  -ms-transform: translateY(-7px);
+  -o-transform: translateY(-7px);
+}
+
+#projects .proj-btns-div {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.modal-footer button {
+  background: #2e2ca0;
+  border: 1px solid white;
+}
+
+#projects .card-title,
+#projects .card-body {
+  text-align: center;
+}
+
+#projects .card-body {
+  padding: 0.5rem;
+}
+
+#projects img {
+  border: 1px solid #d3d3d3;
+}
+
+.proj-modal-header.modal-header {
+  background: #2e2ca0;
+  color: white;
+}
+
+.proj-modal-header .modal-title {
+  font-size: 100%;
+}
+
+.proj-modal-header span {
+  color: white;
+}
+
+.proj-modal-pic {
+  max-width: 25%;
+  padding: 0 2%;
+}
+.proj-modal-text {
+  text-align: left;
+  flex: 4;
+  padding-right: 4%;
+}
+
+.flexed-modal-body-proj {
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  #projects .project-rows {
+    flex-direction: column;
+    justify-content: center !important;
+  }
+
+  #projects .card {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #projects .col {
+    margin-bottom: 4.5%;
+  }
+
+  .proj-modal-pic {
+    display: none;
+  }
+  .proj-modal-text {
+    padding: 3% 5%;
+    text-align: center;
+  }
+  .modal-footer {
+    justify-content: center !important;
+    text-align: center;
+  }
+}

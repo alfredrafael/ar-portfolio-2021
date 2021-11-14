@@ -1,38 +1,36 @@
-import React, { useEffect } from 'react';
-import './App.css';
-import Home from './components/Home';
+import React from "react";
+import "./App.css";
+import Home from "./components/Home";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from './components/NavigationBar/NavigationBar';
-import Footer from './components/Footer/Footer';
-import Page2 from './components/Page2/Page2';
-import $ from 'jquery';
-
+//import { GlobalStyle } from './AppGlobalStyle';
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import Resume from "./components/Resume/Resume";
+import $ from "jquery";
 
 const App = () => {
+  // window.history.pushState({}, '', '/') //AMAZING
 
   return (
     <React.Fragment>
-    <Navbar />
+      <Navbar />
       <Router>
-
-
-        {/* //////////////////////////////////////////////////////////////////////// */}
+        {/* ///////////////////////////////////////////////////////// */}
         <Switch>
           <Route path="/" component={Home} exact />
-          <Route path="/page-2" component={Page2} />
-
-          <Route render={() => <h2 style={{ paddingTop: '15%' }}>404 Page not found</h2>} />
-
+          <Route path="/resume" component={Resume} />
+          <Route
+            render={() => (
+              <h2 style={{ paddingTop: "15%" }}>404 Page not found</h2>
+            )}
+          />
         </Switch>
-        {/* //////////////////////////////////////////////////////////////////////// */}
+        {/* ///////////////////////////////////////////////////////// */}
 
-
-        <Footer />
+        {/* <Footer /> */}
       </Router>
-
-
     </React.Fragment>
   );
-}
+};
 
 export default App;
