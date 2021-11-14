@@ -4,7 +4,7 @@ import Home from "./components/0Home";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/1NavigationBar/1NavigationBar";
 import Footer from "./components/ZFooter";
-import Resume from "./components/Resume";
+import Resume from "./components/7Resume";
 import $ from "jquery";
 
 const App = () => {
