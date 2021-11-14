@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Button, Card, Modal } from "react-bootstrap";
 import { Fade } from "react-reveal";
-import "./cssProjects.css";
+import "./projects.css";
 
 const Projects = () => {
   //modals setup:
