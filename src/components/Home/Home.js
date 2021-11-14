@@ -1,22 +1,21 @@
 import React from "react";
-import HeroSlider from "../HeroSlider";
-import WebDevIcons from "../WebDevIcons";
-import About from "../About";
-import Projects from "../Projects";
-import Footer from "../Footer";
-import "./CssHome.css";
+import HeroBanner from "../2HeroBanner";
+import About from "../4About";
+import WebDevIcons from "../3WebDevIcons";
+import Services from "../5DServices";
+import Projects from "../6Projects";
+
+import "./home.css";
 import $ from "jquery";
-import DServices from "../DServices";
 
 const Home = () => {
   return (
-    <React.Fragment>
-      <HeroSlider />
+    <React.Fragment id="home">
+      <HeroBanner />
       <WebDevIcons />
       <About />
-      <DServices />
+      <Services />
       <Projects />
-      <Footer />
     </React.Fragment>
   );
 };

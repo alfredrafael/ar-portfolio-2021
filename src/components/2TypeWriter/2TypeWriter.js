@@ -1,8 +1,8 @@
 import React from "react";
-import "./CssIntroText.css";
+import "./typewriter.css";
 import Typewriter from "typewriter-effect";
 
-const IntroText = () => {
+const TypeWriter = () => {
   return (
     <React.Fragment>
       <div className="carousel-overlay-text">
@@ -29,4 +29,4 @@ const IntroText = () => {
   );
 };
 
-export default IntroText;
+export default TypeWriter;

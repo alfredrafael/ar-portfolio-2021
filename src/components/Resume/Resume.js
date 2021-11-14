@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "./CssResume.css";
+import "./cssResume.css";
 import $ from "jquery";
 
 const Exploratory = () => {

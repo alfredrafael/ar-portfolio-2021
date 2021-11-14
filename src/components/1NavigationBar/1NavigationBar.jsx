@@ -1,7 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
-import emailjs, { init } from "emailjs";
-import { Form, NavDropdown } from "react-bootstrap";
-import "./navbarStyles.css";
+import React, { useState, useEffect } from "react";
+import { NavDropdown } from "react-bootstrap";
+import "./navbar.css";
 import {
   Collapse,
   Navbar,
@@ -11,15 +10,10 @@ import {
   NavItem,
   NavLink,
   Container,
-  Button,
-  Modal,
-  ModalBody,
 } from "reactstrap";
 import $ from "jquery";
 
-import { MY_MAIL_USER_ID, MY_SERVICE_ID } from "../../config";
-
-const Bar = (props) => {
+const NavigationBar = (props) => {
   useEffect(() => {
     $(".navbar-fading-effect").css("background", "rgba(4, 1, 130, 1)");
 
@@ -35,67 +29,10 @@ const Bar = (props) => {
     };
   });
 
-  // init("user_HOHwzUZ9ZKm88Y5S2m9s0");
-  const form = useRef();
-
-  //////////for modal-mail/////////////////
-  const [isOpen, setIsOpen] = useState(false);
-  let toggleNavbar = () => setIsOpen(!isOpen);
-  const { className } = props;
-
   //////////for collapsible navbar menu//////////
 
-  const [modal, setModal] = useState(false);
-  const toggleModal = () => setModal(!modal);
-
-  /////////// for email /////////////////
-
-  function sendEmail(e) {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        MY_SERVICE_ID,
-        "template_only_message",
-        e.target,
-        MY_MAIL_USER_ID
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-    toggleModal();
-    alert("Got your message!");
-  }
-
-  // function sendEmail(e) {
-  //   e.preventDefault();
-
-  //   emailjs
-  //     .sendForm(
-  //       MY_SERVICE_ID,
-  //       "template_only_message",
-  //       e.target,
-  //       MY_MAIL_USER_ID
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-
-  //   e.target.reset();
-  //   toggleModal();
-  //   alert("Got your message!");
-  // }
+  const [isOpen, setIsOpen] = useState(false);
+  let toggleNavbar = () => setIsOpen(!isOpen);
 
   //////////----------------/////////////---------------- /////////////
 
@@ -166,41 +103,8 @@ const Bar = (props) => {
           </Collapse>
         </Container>
       </Navbar>
-
-      <div>
-        <Modal isOpen={modal} className={className}>
-          <ModalBody>
-            <Form className="" onSubmit={sendEmail} style={{ width: "100%" }}>
-              <Form.Control
-                name="user_user"
-                as="input"
-                value="RESUME BAR"
-                style={{ display: "none" }}
-              />
-              <Form.Control
-                name="message"
-                as="textarea"
-                rows={12}
-                placeholder="Your message goes here :)"
-              />
-              <p className="fromGeneric"></p>
-              <Button className="sendButton" type="submit" value="Send">
-                Well, send it!
-              </Button>
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              <Button
-                color="transparent"
-                style={{ border: "1px solid #040182" }}
-                onClick={toggleModal}
-              >
-                Cancel
-              </Button>
-            </Form>
-          </ModalBody>
-        </Modal>
-      </div>
     </React.Fragment>
   );
 };
 
-export default Bar;
+export default NavigationBar;

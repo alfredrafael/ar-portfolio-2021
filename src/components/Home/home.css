@@ -1,6 +1,7 @@
-#how-can-I-help {
-    scroll-margin-top: 6.5em;
+.home {
+    color: red !important;
 }
+
 
 /*/////////////////// MEDIA QUERIES START /////////////////////////////////*/
 
@@ -22,37 +23,30 @@
 
 /*iPhone XR*/
 @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
-	
 }
 
 /*iPhone 6/7/8*/
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
-	
 }
 
 /*iPhone 6+/7+/8+ */
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
-	
 }
 
 /*iPhone X*/
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-	
 }
 
 /*iPhone XS*/
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-
 }
 
 /* iphone XS Max */
 @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
-	
 }
 
 /*Galaxy 5s*/
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
-	
 }
 
 /*/////////Other androids///////////*/
@@ -60,47 +54,19 @@
 /*Samsung Galaxy S9 Media Queries (In terms of Mobile only)*/
 
 @media only screen and (min-width: 360px) and (max-width: 767px) {
-	
 }
 
 /*---LAPTOPS AND ABOVE---*/
 
 /*-- specific for this project's <h1>--*/
 @media screen and (min-device-width: 992px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-   
-    /* .carousel-overlay-text {
-        top: 60%;
-        bottom: 10% important;
-        text-align: left;
-    }
-
-    .carousel-overlay-text h1 {
-        font-size: 450% !important;
-
-    } */
 }
 
 /*-- specific for this project's <h1>--*/
 @media screen and (min-device-width: 770px) and (max-device-width: 1px) and (-webkit-min-device-pixel-ratio: 1) {
-/* 
-    .carousel-overlay-text h1 {
-        font-size: 350% !important;
-    }
-    .carousel-overlay-text {
-        top: 50%;
-    } */
 }
 
 @media screen and (min-device-width: 690px) and (max-device-width: 769px) and (-webkit-min-device-pixel-ratio: 1) {
-
-    /* .carousel-overlay-text h1 {
-        font-size: 300% !important;
-        text-align: left;
-    }
-    .carousel-overlay-text {
-        top: 20%;
-        color: red;
-    } */
 }
 
 /* ----------- Non-Retina Screens ----------- */

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Row } from "reactstrap";
-import "./CssHeroSlider.css";
-import IntroText from "../IntroText";
+import "./heroBanner.css";
+import TypeWriter from "../2TypeWriter";
 
-const HeroSlider = () => {
+const HeroBanner = () => {
   // const [isLoaded, setIsLoaded] = useState(false);
 
   // useEffect(() => {
@@ -15,7 +15,7 @@ const HeroSlider = () => {
   return (
     <React.Fragment>
       <span className="dynamicIntro">
-        <IntroText />
+        <TypeWriter />
       </span>
 
       <div
@@ -86,4 +86,4 @@ const HeroSlider = () => {
   );
 };
 
-export default HeroSlider;
+export default HeroBanner;

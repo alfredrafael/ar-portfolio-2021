@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row, Container } from "react-bootstrap";
 import { StyledFooter } from "./StyledFooter";
-import "./CssFooter.css";
+import "./footer.css";
 
 const AppFooter = () => {
   return (
