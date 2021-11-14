@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Row } from "reactstrap";
 import "./heroBanner.css";
-import TypeWriter from "../2TypeWriter";
+// import TypeWriter from "../2TypeWriter";
 
 const HeroBanner = () => {
   // const [isLoaded, setIsLoaded] = useState(false);
@@ -14,9 +14,7 @@ const HeroBanner = () => {
 
   return (
     <React.Fragment>
-      <span className="dynamicIntro">
-        <TypeWriter />
-      </span>
+      <span className="dynamicIntro">{/*  <TypeWriter />  */}</span>
 
       <div
         style={{ background: "black" }}

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./App.css";
-import Home from "./components/Home";
+import Home from "./components/0Home";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/1NavigationBar/1NavigationBar";
 import Footer from "./components/ZFooter";
